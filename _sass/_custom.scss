@@ -2,23 +2,23 @@
   margin-bottom: 0;
 }
 
-.navbar-brand {
-  font-size: 24px;
-}
+// .navbar-brand {
+//   font-size: 24px;
+// }
 
 a#site-brand:hover {
   color: $brand-info;
 }
 
 .content-row {
-  background: $brand-info;
+  // background: $brand-info;
 }
 
 #footer {
   padding-top: 20px;
   padding-bottom: 20px;
-  background: $brand-primary;
-  color: #fff;
+  background: $gray-darker;
+  color: $text-color;
 }
 
 ul.social-media-list {
@@ -33,7 +33,7 @@ ul.social-media-list {
 }
 
 .sidebar {
-  background: $brand-info;
+  // background: $brand-info;
   color: #fff;
   h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
@@ -64,7 +64,7 @@ ul.social-media-list {
 }
 
 .content {
-  background: #fff;
+  // background: #fff;
   a {
     color: $text-color;
   }
@@ -95,7 +95,7 @@ ul.social-media-list {
 }
 
 .page-content-area {
-  background: #fff;
+  // background: #fff;
 }
 
 .post {
@@ -108,7 +108,7 @@ ul.social-media-list {
 
 .post-meta-block {
   margin-top: 21px;
-  color: $brand-info;
+  color: $text-color;
   
   .day-block {
     display: block;
@@ -136,6 +136,14 @@ ul.social-media-list {
   font-size: $font-size-large;
 }
 
+.post-header {
+  border-bottom: 1px solid $text-color;
+  margin-bottom: 21px;
+  .post-subtitle {
+    
+  }
+}
+
 a.continue-reading {
   color: $brand-info;
   font-size: $font-size-base;
@@ -144,10 +152,10 @@ a.continue-reading {
 .author-info {
   background: $brand-info;
   min-height: 200px;
-  color: #fff;
+  color: $text-color;
   padding-top: 21px;
   a {
-    color: #fff;
+    color: $text-color;
   }
 }
 
@@ -155,7 +163,7 @@ img.author-avatar {
   width: 128px;
   height: 128px;
   border-radius: 64px;
-  border: 4px solid #fff;
+  border: 4px solid $text-color;
   &.author-footer {
     float: right;
   }
@@ -189,7 +197,7 @@ img.author-avatar {
   list-style-type: none;
   padding-left: 21px;
   a {
-    color: #fff;
+    color: $text-color;
   }
 }
 
@@ -198,6 +206,7 @@ img.author-avatar {
   svg {
     width: 16px;
     height: 16px;
+    fill: $text-color;
   }
 }
 
@@ -213,4 +222,33 @@ img.author-avatar {
   }
   font-size: $font-size-large;
   min-height: 300px;
+}
+
+.contact-icon {
+  svg {
+    fill: $text-color;
+  }
+}
+
+.tweet {
+  .tweet-embed {
+    float: left;
+  }
+  .tweet-caption {
+    padding-top: 10px;
+    overflow: hidden;
+  }
+  .tweet-caption-content {
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    border-left: 1px solid $text-color;
+    font-size: $font-size-small;
+  }
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
 }
